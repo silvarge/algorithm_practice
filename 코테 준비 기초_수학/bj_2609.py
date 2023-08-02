@@ -14,7 +14,6 @@ while True:
     else:
         break
 
-
 # 최소공배수
 lcm = (n[0] * n[1])//gcd
 
