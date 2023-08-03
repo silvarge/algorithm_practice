@@ -1,15 +1,15 @@
-n = int(input())
 inp = list(map(int, input().split()))
-count = 0
+result = []
 
-for i in inp:
+for i in range(inp[0], inp[1]+1):
     cnt = 0
     for j in range(1, i+1):
         if i % j == 0:
             cnt += 1
 
     if cnt == 2:
-        count += 1
+        result.append(i)
 
 
-print(count)
+for i in result:
+    print(i)
